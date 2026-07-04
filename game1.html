@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пазлы с картинкой</title>
+    <link rel="stylesheet" href="game1.css">
+</head>
+<body>
+    <h1>Пазлы - собери картинку</h1>
+
+    <div id="imageSelector" class="selector">
+        <h2>Выбери картинку для сборки:</h2>
+
+        <div class="images" id="imagesContainer"></div>
+
+        <div class="upload-section">
+            <h3>Или загрузи свою картинку</h3>
+            <p style="color:#666; font-size: 0.9em;">(рекомендуется квадратная: 500*500, 600*600 и т.д.)</p>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="showScoresFromSelector" class="showScores" style="margin-top: 20px;">Таблица рекордов</button>
+        </div>
+    </div>
+
+    <div id="gameContainer" class="hidden">
+        <div class="controls">
+            <button id="newGame" class="newGame">Новая игра</button>
+            <button id="changeImage" class="newGame">Сменить картинку</button>
+            <button id="showOriginal" class="newGame">Показать оригинал</button>
+            <select id="difficulty" class="difficulty-select">
+                <option value="3">3x3 (легко)</option>
+                <option value="4" selected>4x4 (средне)</option>
+                <option value="5">5x5 (сложно)</option>
+                <option value="6">6x6 (эксперт)</option>
+            </select>
+            <button id="showScores" class="showScores">Таблица рекордов</button>
+            
+        </div>
+
+        <div id="stats">
+            <span id="moves">Ходы: 0</span>
+            <span id="timer">Время: 0 сек</span>
+        </div>
+
+        <canvas id="game" width="512" height="512" class="game"></canvas>
+    </div>
+
+    <div id="scoreboard" class="scoreboard hidden">
+        <h2>Рекорды игрока</h2>
+        <table>
+            <thead>
+                <tr><th>Место</th><th>Имя</th><th>Ходы</th><th>Время (сек)</th><th>Размер</th><th>Картинка</th></tr>
+            </thead>
+            <tbody id="scoreTable"></tbody>
+        </table>
+        <button id="closeScores" class="newGame">Закрыть</button>
+    </div>
+
+    <script src="game2.js"></script>
+</body>
+</html>
