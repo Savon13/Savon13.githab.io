@@ -219,9 +219,10 @@ button{
     
     .scoreboard table {
         font-size: 11px;
-        display: block;
         overflow-x: auto;
         white-space: nowrap;
+        display: inline-table;
+        width: 100%;
     }
     
     .scoreboard td,
@@ -273,4 +274,17 @@ button{
         padding: 3px 4px;
         font-size: 9px;
     }
+}
+
+.images {
+    box-sizing: border-box;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+.images img {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 !important;
 }
