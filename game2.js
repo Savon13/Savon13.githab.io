@@ -240,7 +240,8 @@ class PuzzleGame extends Game {
       const el = document.createElement('img');
       el.src = img.url;
       el.title = img.name;
-      el.style.width = '180px';
+      el.style.width = '100%';
+      el.style.maxWidth = '180px';
       el.style.borderRadius = '10px';
       el.style.cursor = 'pointer';
       el.style.margin = '8px';
