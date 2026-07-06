@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    background-color: white;
+}
+
+header{
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.header-image{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    min-height: 80vh;
+}
+
+.sidebar{
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar li{
+    margin: 15px 0;
+}
+
+.sidebar a:hover{
+    text-decoration: underline;
+}
+
+.content{
+    flex: 1;
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: #aaf;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a,
+.sidebar a:visited,
+.sidebar a:hover,
+.sidebar a:focus {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.und {
+    text-decoration: none; 
+    color: blue;
+}

@@ -3,59 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пазлы с картинкой</title>
-    <link rel="stylesheet" href="game1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Магазин аудиодисков</title>
 </head>
 <body>
-    <h1>Пазлы - собери картинку</h1>
+    <header>
+        <img src="logo1.png" alt ="Аудио магазин" class="header-image">
+        <h1>
+            Магазин аудиодисков "MusicWorld"
+        </h1>
+    </header>
 
-    <div id="imageSelector" class="selector">
-        <h2>Выбери картинку для сборки:</h2>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Об авторе</a></li>
+            <li><a href="company.html">О фирме</a></li>
+            <li><a href="rock.html">Рок</a></li>
+            <li><a href="jazz.html">Джаз</a></li>
+            <li><a href="pop.html">Поп</a></li>
+            </ul>
+        </nav>
 
-        <div class="images" id="imagesContainer"></div>
+        <main class="content">
+            <h2>
+                Наши аудиодиски
+            </h2>
+            <div class="products">
+                <div class="card">
+                    <img src="1.webp" alt="AC/DC - Back in black">
+                    <h3>AC/DC - Back in black</h3>
+                    <p>Жанр: Рок<br>Год: 1980</p>
+                    <p class="price"> Цена: 120 рублей</p>
+                </div>
 
-        <div class="upload-section">
-            <h3>Или загрузи свою картинку</h3>
-            <p style="color:#666; font-size: 0.9em;">(рекомендуется квадратная: 500*500, 600*600 и т.д.)</p>
-            <input type="file" id="imageUpload" accept="image/*">
-            <button id="showScoresFromSelector" class="showScores" style="margin-top: 20px;">Таблица рекордов</button>
-        </div>
+                <div class="card">
+                    <img src="2.webp" alt="Rammstein - Sonne">
+                    <h3>Rammstein - Sonne</h3>
+                    <p>Жанр: Рок<br>Год: 2001</p>
+                    <p class="price"> Цена: 190 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="3.webp" alt="Alphaville - Forever Young">
+                    <h3>Alphaville - Forever Young</h3>
+                    <p>Жанр: Поп<br>Год: 1984</p>
+                    <p class="price"> Цена: 350 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="4.webp" alt="Кино - Звезда по имени Солнце">
+                    <h3>Кино - Звезда по имени Солнце</h3>
+                    <p>Жанр: Рок<br>Год: 1989</p>
+                    <p class="price"> Цена: 250 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="7.webp" alt="Nautilus Pompilius - Крылья">
+                    <h3>Nautilus Pompilius - Крылья</h3>
+                    <p>Жанр: Рок<br>Год: 1996</p>
+                    <p class="price"> Цена: 290 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="pic.jpg" alt="Нэнси - Чистый лист">
+                    <h3>Нэнси - Чистый лист</h3>
+                    <p>Жанр: Поп<br>Год: 1995</p>
+                    <p class="price"> Цена: 2800 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="5.webp" alt="Michael Jackson - Thriller">
+                    <h3>Michael Jackson – Thriller</h3>
+                    <p>Жанр: Поп<br>Год: 1982</p>
+                    <p class="price">Цена: 400 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="6.webp" alt="Madonna - Like a Virgin">
+                    <h3>Madonna – Like a Virgin</h3>
+                    <p>Жанр: Поп<br>Год: 1984</p>
+                    <p class="price">Цена: 370 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="zx.jpg" alt="Dave Green Trio - Retrospective">
+                    <h3>Dave Green Trio - Retrospective</h3>
+                    <p>Жанр: джаз<br>Год: 2019</p>
+                    <p class="price">Цена: 570 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="121.webp" alt="Oscar Peterson & Dizzy Gillespie - Caravan">
+                    <h3>Oscar Peterson & Dizzy Gillespie - Caravan</h3>
+                    <p>Жанр: джаз<br>Год: 1974</p>
+                    <p class="price">Цена: 460 рублей</p>
+                </div>
+
+                <div class="card">
+                    <img src="rew.webp" alt="Charlie Parker - Tico-Tico">
+                    <h3>Charlie Parker - Tico-Tico</h3>
+                    <p>Жанр: джаз<br>Год: 2014</p>
+                    <p class="price">Цена: 310 рублей</p>
+                </div>
+            </div>
+        </main>
     </div>
-
-    <div id="gameContainer" class="hidden">
-        <div class="controls">
-            <button id="newGame" class="newGame">Новая игра</button>
-            <button id="changeImage" class="newGame">Сменить картинку</button>
-            <button id="showOriginal" class="newGame">Показать оригинал</button>
-            <select id="difficulty" class="difficulty-select">
-                <option value="3">3x3 (легко)</option>
-                <option value="4" selected>4x4 (средне)</option>
-                <option value="5">5x5 (сложно)</option>
-                <option value="6">6x6 (эксперт)</option>
-            </select>
-            <button id="showScores" class="showScores">Таблица рекордов</button>
-            
-        </div>
-
-        <div id="stats">
-            <span id="moves">Ходы: 0</span>
-            <span id="timer">Время: 0 сек</span>
-        </div>
-
-        <canvas id="game" width="512" height="512" class="game"></canvas>
-    </div>
-
-    <div id="scoreboard" class="scoreboard hidden">
-        <h2>Рекорды игрока</h2>
-        <table>
-            <thead>
-                <tr><th>Место</th><th>Имя</th><th>Ходы</th><th>Время (сек)</th><th>Размер</th><th>Картинка</th></tr>
-            </thead>
-            <tbody id="scoreTable"></tbody>
-        </table>
-        <button id="closeScores" class="newGame">Закрыть</button>
-    </div>
-
-    <script src="game2.js"></script>
+    <footer>
+        <p>© 2026 MusicWorld | Все права защищены | <a href="https://e.mail.ru/compose/?mailto:savon06@bk.ru">savon06@bk.ru</a></p>
+    </footer>
 </body>
 </html>
